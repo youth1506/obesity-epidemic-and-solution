@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Disease Prediction</title>
+</head>
+<body>
+    <h1>Disease Prediction</h1>
+    <form action="/predict" method="post">
+        <label for="age">Age:</label>
+        <input type="number" name="age" required>
+        <br>
+
+        <label for="bmi">BMI:</label>
+        <input type="number" name="bmi" step="0.1" required>
+        <br>
+
+        <label for="physical_activity">Physical Activity:</label>
+        <select name="physical_activity" required>
+            <option value="Low">Low</option>
+            <option value="Moderate">Moderate</option>
+            <option value="High">High</option>
+        </select>
+        <br>
+
+        <label for="dietary_habits">Dietary Habits:</label>
+        <select name="dietary_habits" required>
+            <option value="Unhealthy">Unhealthy</option>
+            <option value="Moderate">Moderate</option>
+            <option value="Healthy">Healthy</option>
+        </select>
+        <br>
+
+        <label for="tobacco_use">Tobacco Use:</label>
+        <select name="tobacco_use" required>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+        <br>
+
+        <label for="alcohol_consumption">Alcohol Consumption:</label>
+        <select name="alcohol_consumption" required>
+            <option value="Low">Low</option>
+            <option value="Moderate">Moderate</option>
+            <option value="High">High</option>
+        </select>
+        <br>
+
+        <label for="stress_management">Stress Management:</label>
+        <select name="stress_management" required>
+            <option value="Excellent">Excellent</option>
+            <option value="Good">Good</option>
+            <option value="Poor">Poor</option>
+        </select>
+        <br>
+
+        <label for="regular_checkups">Regular Checkups:</label>
+        <select name="regular_checkups" required>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+        <br>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
